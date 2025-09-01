@@ -57,9 +57,9 @@ userLogOut()
 {
   user?<>
   <span className='text-black'>{user?.email}</span>
-  <button onClick={hadleLogout} className='btn btn-secondary'>Log out</button>
+  <button onClick={hadleLogout} className='btn cosmic-button'>Log out</button>
   </>: <>
-  <Link to='/login'> <button className='btn btn-primary' >Login</button> </Link>
+  <Link to='/login'> <button className='btn cosmic-button' >Login</button> </Link>
   </>
 }
   </div>

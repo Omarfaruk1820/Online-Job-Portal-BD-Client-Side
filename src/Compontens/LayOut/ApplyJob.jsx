@@ -74,7 +74,7 @@ const ApplyJob = () => {
               placeholder="Linkdin"
             />
 
-            <button className="btn btn-neutral mt-4">Apply</button>
+            <button className="btn cosmic-button mt-4">Apply</button>
           </fieldset>
         </form>
       </div>

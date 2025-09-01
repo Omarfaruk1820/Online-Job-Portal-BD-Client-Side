@@ -10,9 +10,9 @@ const JobCategori = () => {
         .then(data=> setJobs(data))
     },[])
     return (
-        <div>
+        <div className="max-w-5xl mx-auto">
           
-           <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-col-1 gap-5 '>
+           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 '>
             {
              jobs.map(jobsItems=> <JobCard key={jobsItems._id} jobsItems={jobsItems}></JobCard>)   
             }

@@ -107,7 +107,7 @@ fetch('http://localhost:5000/jobs',{
          
      
          
-          <button className="btn btn-neutral mt-4">Post JOb</button>
+          <button className="btn cosmic-button mt-4">Post JOb</button>
         </fieldset>
       </form>
     </div>

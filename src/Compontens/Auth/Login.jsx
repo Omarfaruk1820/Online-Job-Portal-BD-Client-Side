@@ -53,7 +53,7 @@ const Login = () => {
           <label className="label">Password</label>
           <input name='password' type="password" className="input" placeholder="Password" />
           <div><a className="link link-hover">Forgot password?</a></div>
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn cosmic-button mt-4">Login</button>
         </fieldset>
       </form>
      <h1 className='text-center'> New to Job Portal  <Link className='text-green-500' to='/register'>Please Register</Link></h1>

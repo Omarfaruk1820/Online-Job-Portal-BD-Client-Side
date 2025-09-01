@@ -36,7 +36,7 @@ const MyPostedJob = () => {
         <td>{job.applicationCount}</td>
         <td>
             <Link to={`/viewapplication/${job._id}`}>
-            <button className='btn btn-accent'>View Application</button>
+            <button className='btn btn-sm cosmic-button text-wrap'>View Application</button>
             </Link>
         </td>
       </tr> )
