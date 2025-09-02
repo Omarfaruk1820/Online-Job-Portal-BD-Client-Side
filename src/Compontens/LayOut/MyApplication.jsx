@@ -16,15 +16,14 @@ const MyApplication = () => {
     }
   }, [user?.email]);
     return (
-        <div>
-           
-            <div className="overflow-x-auto">
-  <table className="table">
+        <div className="py-24 px-4 relative">
+           <div className="overflow-x-auto">
+  <table className="md:table  ">
     {/* head */}
     <thead>
       <tr>
         <th></th>
-<th>Company Photo</th>
+<th className="">Company Photo</th>
         <th>User Email</th>
         <th>Job Title</th>
         <th>Company</th>
@@ -35,7 +34,7 @@ const MyApplication = () => {
    {
       jobs.map((job,index)=>  <tr key={job._id}>
         <th>{index +1}</th>
-        <td> <img src={job.company_logo} alt="" /> </td>
+        <td> <img className="w-12 h-12" src={job.company_logo} alt="" /> </td>
         <td>{job.applicat_email}</td>
         <td>{job.title}</td>
         <td>{job.company}</td>

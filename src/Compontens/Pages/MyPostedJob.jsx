@@ -13,17 +13,17 @@ const MyPostedJob = () => {
 
     },[user?.email])
     return (
-        <div>
-           <div className="overflow-x-auto">
-  <table className="table">
+        <section className="py-24 px-4 relative">
+           <div className="overflow-x-auto ">
+  <table className="md:table ">
     {/* head */}
-    <thead>
+    <thead className="text-sm">
       <tr>
         <th></th>
         <th>Title</th>
         <th>Job</th>
         <th>Application Count</th>
-        <th>Favorite Color</th>
+        <th>View Application</th>
       </tr>
     </thead>
     <tbody>
@@ -36,7 +36,7 @@ const MyPostedJob = () => {
         <td>{job.applicationCount}</td>
         <td>
             <Link to={`/viewapplication/${job._id}`}>
-            <button className='btn btn-sm cosmic-button text-wrap'>View Application</button>
+            <button className='btn btn-sm cosmic-button text-wrap text-muted-foreground text-sm'> View Application </button>
             </Link>
         </td>
       </tr> )
@@ -46,7 +46,7 @@ const MyPostedJob = () => {
     </tbody>
   </table>
 </div>
-        </div>
+        </section>
     );
 };
 
